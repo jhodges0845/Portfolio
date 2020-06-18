@@ -1,30 +1,20 @@
 import React from 'react';
+import NavLink from './NavLink';
+import PropTypes from 'prop-types';
 
 export class Header extends React.Component{
-    constructor(props){
-        super(props)
-        this.myRef = React.createRef()
-    }
 
-    Sketch = (p) => {
-        p.setup = () => {
 
-        }
-
-        p.draw = () =>{
-
-        }
-    }
-
-    componentDidMount(){
-        this.myP5 = new this.myP5(this.Sketch, this.myRef.current)
-    }
 
     render(){
-        return (
-            <div ref="this.myRef">
-
-            </div>
-        )
+        return this.props.navLinks.map((navLink) =>(
+        <NavLink key={navLink.id} navLink={navLink} setActive={this.props.setActive}/>
+        ));
     }
 }
+
+Header.propTypes = {
+    navLinks: PropTypes.array.isRequired
+}
+
+export default Header;

@@ -1,3 +1,7 @@
+body{
+  background-color: #F6F6F6;
+}
+
 .App {
   text-align: center;
 }
@@ -6,6 +10,57 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-container > div{
+  text-align: center;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  width: 100%;
+  background-color: #363538;
+
+}
+.navbar > h3{
+  text-align: center;
+  
+}
+.navbar > h3{
+  font-size: 32px;
+  font-weight: bold;
+  padding: 20px;
+  display: inline;
+  color: #408697;
+  margin: 10px;
+}
+.navbar > h3:hover{
+  text-decoration: underline;
+}
+.navbar > h3:active{
+  color: #52D6F4;
+  text-decoration: underline;
+}
+
+.section{
+  margin-left: 15%;
+  margin-top: 30px;
+  width: 75%;
+  text-align: center;
+}
+
+.section > h1{
+  padding: 10px;
+  background-color: #408697;
+  color: #363538;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

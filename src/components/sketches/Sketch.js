@@ -1,6 +1,7 @@
 import React from 'react';
 import p5 from 'p5';
 import myfont from "./inconsolata.otf"
+import bg from "./grey2.jpg"
 
 // for navigating text vectors
 class Particle{
@@ -23,8 +24,10 @@ class Sketch extends React.Component {
     Sketch = (p) =>{
         var font;
         var frameCount = 0;
+        var bgImage;
         p.preload = () =>{
             font = p.loadFont(myfont);
+            bgImage = p.loadImage(bg);
         }
 
         // initial Setup and getting point vectors for text.
@@ -48,18 +51,45 @@ class Sketch extends React.Component {
 
             // Draw and trace name
             if(frameCount < points.length){
-                p.background(54,53,56);
-                particle.x = points[frameCount].x;
-                particle.y = points[frameCount].y;
-                this.show(particle);
-                this.update(particle, points[frameCount].x, points[frameCount].y);
+                    p.background(bgImage);
+                    //p.background(54,53,56);
+                    particle.x = points[frameCount].x;
+                    particle.y = points[frameCount].y;
+                    this.show(particle);
+                    this.update(particle, points[frameCount].x, points[frameCount].y);
                 frameCount ++;
             }else{
-                p.background(54,53,56);
+                p.background(bgImage);
+                //p.background(54,53,56);
+                //this.setGradient(50, 90, 540, 80, 54, 141, 2);
                 this.showHistoryOnly(particle);
+                p.textSize(32);
+                p.noStroke();
+                p.fill(64, 134,151);
+                p.text("Full Stack Developer", window.innerWidth / 3.5, 250);
+            }//end_if
+        }//end_draw
+
+        // create Linear Gradient background
+        this.setGradient = (x, y, w, h, c1, c2, axis) =>{
+            p.noFill();
+            
+            if(axis === 1){
+                for (var i = y; i<= y + h; i++){
+                    var inter = p.map(i, y, y + h, 0 ,1);
+                    var c = p.lerpColor(c1, c2, inter);
+                    p.stroke(c);
+                    p.line(x, i, x+w, i);
+                }
+            }else if(axis === 2){
+                for(var i = x; i<= x + w; i++){
+                    var inter = p.map(i, x, x + w, 0, 1);
+                    var c = p.lerpColor(c1, c2, inter);
+                    p.stroke(c);
+                    p.line(i, y, i, y + h);
+                }
             }
         }
-
 
         // Shows only history of vectors from previous frames
         this.showHistoryOnly = (obj) =>{
@@ -79,7 +109,7 @@ class Sketch extends React.Component {
             // Draw Line at current point and every point in history
             p.stroke(82,214,244);
             p.fill(82,214,244);
-            p.line(obj.x, obj.y, 10,10);
+            p.ellipse(obj.x, obj.y, 10,10);
 
             for(var j = 1; j < obj.history.length; j++){
                 var nextPos = obj.history[j];
