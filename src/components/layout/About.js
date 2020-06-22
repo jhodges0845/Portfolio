@@ -6,7 +6,7 @@ export class About extends React.Component{
             <div>
                 <div className="flex-container">
                     <div style={{flex: 1}}>
-                        <img className="profile-pic" src={process.env.PUBLIC_URL + 'ProfileImage.JPG'} />
+                        <img alt="Profile Picture" className="profile-pic" src={process.env.PUBLIC_URL + 'ProfileImage.JPG'} />
                     </div>
                     <div style={{flex: 2}}>
                         <p>Generalist developer with industrial 
