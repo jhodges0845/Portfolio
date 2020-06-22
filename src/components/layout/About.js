@@ -15,7 +15,7 @@ export class About extends React.Component{
                             Technology: Computer Programming which has recently been renamed Computer Engineering. 
                         </p>
                         <p> My industrial experience is IT Administrator / Software Developer. I held the only 
-                            software developer postion at a paper mill, where my main focus was to create ways to 
+                            software developer postion at that paper mill, where my main focus was to create ways to 
                             both keep network, devices, and process reliable and efficient.
                         </p>
                         <p> I excel at learning and implementing new technologies quickly 
