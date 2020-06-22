@@ -1,5 +1,12 @@
 body{
-  background-color: #F6F6F6;
+  background-color: #8D8C8A;
+}
+
+
+.profile-pic{
+  transform: rotate(90deg);
+  width: 250px;
+  height: 225px;
 }
 
 .App {
@@ -10,10 +17,25 @@ body{
   height: 40vmin;
   pointer-events: none;
 }
+i:hover, .icon:hover{
+  animation: rotation 2s;
+  cursor: pointer;
+}
+
+@keyframes rotation{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(359deg);
+  }
+}
 
 .flex-container{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .flex-container > div{
@@ -28,23 +50,30 @@ body{
   background-color: #363538;
 
 }
-.navbar > h3{
+
+.navbar a{
+  text-decoration: none;
+}
+.navbar a > h3{
   text-align: center;
+
   
 }
-.navbar > h3{
+.navbar a > h3{
   font-size: 32px;
   font-weight: bold;
   padding: 20px;
   display: inline;
   color: #408697;
   margin: 10px;
+
 }
-.navbar > h3:hover{
+.navbar a > h3:hover{
   text-decoration: underline;
+  cursor: pointer;
 }
-.navbar > h3:active{
-  color: #52D6F4;
+.navbar a > h3:active{
+  color: #8D8C8A;
   text-decoration: underline;
 }
 

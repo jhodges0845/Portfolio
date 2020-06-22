@@ -1,7 +1,11 @@
 import React from 'react';
 import "./App.css"
-import Sketch from "./components/sketches/Sketch"
-import Header from "./components/layout/Header"
+import Sketch from "./components/sketches/Sketch";
+import Header from "./components/layout/Header";
+import About from "./components/layout/About";
+import Skill from "./components/layout/Skills";
+import Showcase from "./components/layout/Showcase";
+import Contact from "./components/layout/Contact";
 
 export class App extends React.Component {
 
@@ -10,25 +14,25 @@ export class App extends React.Component {
         {
             id: 1,
             title: 'About',
-            url: '#',
+            url: '#About',
             active: true
         },
         {
             id: 2,
             title: 'Skills',
-            url: '#',
+            url: '#Skills',
             active: false
         },
         {
             id:3,
             title: 'Showcase',
-            url: '#',
+            url: '#Showcase',
             active: false
         },
         {
             id:4,
             title: 'Contact',
-            url: '#',
+            url: '#Contact',
             active: false
         }
     ]
@@ -54,77 +58,24 @@ render = () =>{
           <Header navLinks={this.state.navLinks} setActive={this.setActive}/>
         </div>
         
-        <div className="about section">
+        <div id="About" className="about section">
           <h1>About</h1>
-          <hr />
-          <p>
-          Lorem Ipsum is simply dummy text of the
-          printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a 
-            galley of type and scrambled it to make a type 
-            specimen book. It has survived not only five 
-            centuries, but also the leap into electronic 
-            typesetting, remaining essentially unchanged. 
-            It was popularised in the 1960s with the release of 
-            Letraset sheets containing Lorem Ipsum passages, and 
-            more recently with desktop publishing software like 
-            Aldus PageMaker including versions of Lorem Ipsum.
-          </p>
+          <About />
         </div>
 
-        <div className="skills section">
+        <div id="Skills" className="skills section">
         <h1>Skills</h1>
-          <p>
-          Lorem Ipsum is simply dummy text of the
-          printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a 
-            galley of type and scrambled it to make a type 
-            specimen book. It has survived not only five 
-            centuries, but also the leap into electronic 
-            typesetting, remaining essentially unchanged. 
-            It was popularised in the 1960s with the release of 
-            Letraset sheets containing Lorem Ipsum passages, and 
-            more recently with desktop publishing software like 
-            Aldus PageMaker including versions of Lorem Ipsum.
-          </p>
+          <Skill />
         </div>
 
-        <div className="showcase section">
+        <div id="Showcase" className="showcase section">
         <h1>Showcase</h1>
-          <p>
-          Lorem Ipsum is simply dummy text of the
-          printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a 
-            galley of type and scrambled it to make a type 
-            specimen book. It has survived not only five 
-            centuries, but also the leap into electronic 
-            typesetting, remaining essentially unchanged. 
-            It was popularised in the 1960s with the release of 
-            Letraset sheets containing Lorem Ipsum passages, and 
-            more recently with desktop publishing software like 
-            Aldus PageMaker including versions of Lorem Ipsum.
-          </p>
+          <Showcase />
         </div>
 
-        <div className="contact section">
-        <h1>Contact</h1>
-          <p>
-          Lorem Ipsum is simply dummy text of the
-          printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a 
-            galley of type and scrambled it to make a type 
-            specimen book. It has survived not only five 
-            centuries, but also the leap into electronic 
-            typesetting, remaining essentially unchanged. 
-            It was popularised in the 1960s with the release of 
-            Letraset sheets containing Lorem Ipsum passages, and 
-            more recently with desktop publishing software like 
-            Aldus PageMaker including versions of Lorem Ipsum.
-          </p>
+        <div id="Contact" className="contact section">
+          <h1>Contact</h1>
+            <Contact />
         </div>
 
       </div>

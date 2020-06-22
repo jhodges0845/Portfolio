@@ -11,9 +11,10 @@ export class NavLink extends React.Component{
     
 
     render(){
-        const {id, title} = this.props.navLink;
+        const {id, title, url} = this.props.navLink;
+        console.log(url);
         return(
-        <h3 onClick={this.props.setActive.bind(this, id)} style={this.getStyle()} >{title}</h3>
+        <a href={url}><h3 onClick={this.props.setActive.bind(this, id)} style={this.getStyle()} >{title}</h3></a>
         );
     }
 
