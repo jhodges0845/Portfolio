@@ -39,7 +39,7 @@ export class App extends React.Component {
 }
 
 setActive = (id) =>{
-  this.setState({nanLinks: this.state.navLinks.map(navLink =>{
+  this.setState({nanLinks: this.state.navLinks.map((navLink) =>{
     if(navLink.id === id){
       navLink.active = true;
     }else{
