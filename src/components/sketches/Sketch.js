@@ -70,26 +70,6 @@ class Sketch extends React.Component {
             }//end_if
         }//end_draw
 
-        // create Linear Gradient background
-        this.setGradient = (x, y, w, h, c1, c2, axis) =>{
-            p.noFill();
-            
-            if(axis === 1){
-                for (var i = y; i<= y + h; i++){
-                    var inter = p.map(i, y, y + h, 0 ,1);
-                    var c = p.lerpColor(c1, c2, inter);
-                    p.stroke(c);
-                    p.line(x, i, x+w, i);
-                }
-            }else if(axis === 2){
-                for(var i = x; i<= x + w; i++){
-                    var inter = p.map(i, x, x + w, 0, 1);
-                    var c = p.lerpColor(c1, c2, inter);
-                    p.stroke(c);
-                    p.line(i, y, i, y + h);
-                }
-            }
-        }
 
         // Shows only history of vectors from previous frames
         this.showHistoryOnly = (obj) =>{
