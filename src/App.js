@@ -45,6 +45,7 @@ setActive = (id) =>{
     }else{
       navLink.active = false;
     }
+    return console.log(navLink.id);
   }) });
 
 }
