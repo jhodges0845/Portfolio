@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.68e5a794.chunk.css",
+    "main.js": "/static/js/main.0f3f2267.chunk.js",
+    "main.js.map": "/static/js/main.0f3f2267.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1e3404c8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1e3404c8.js.map",
+    "static/js/2.3a58451b.chunk.js": "/static/js/2.3a58451b.chunk.js",
+    "static/js/2.3a58451b.chunk.js.map": "/static/js/2.3a58451b.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.aee2b24dcd96ecda353871a6d7c64a63.js": "/precache-manifest.aee2b24dcd96ecda353871a6d7c64a63.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.68e5a794.chunk.css.map": "/static/css/main.68e5a794.chunk.css.map",
+    "static/js/2.3a58451b.chunk.js.LICENSE.txt": "/static/js/2.3a58451b.chunk.js.LICENSE.txt",
+    "static/media/ASPNet.png": "/static/media/ASPNet.d7467536.png",
+    "static/media/OPCIcon.png": "/static/media/OPCIcon.c4efd964.png",
+    "static/media/SQLiteIcon.png": "/static/media/SQLiteIcon.7cc3d432.png",
+    "static/media/TSQLIcon.png": "/static/media/TSQLIcon.9915723b.png",
+    "static/media/arduinoIcon.png": "/static/media/arduinoIcon.b089787d.png",
+    "static/media/cSharp.png": "/static/media/cSharp.46b72118.png",
+    "static/media/djangoIcon.png": "/static/media/djangoIcon.f5e2ff7c.png",
+    "static/media/flaskIcon.png": "/static/media/flaskIcon.a8712b17.png",
+    "static/media/inconsolata.otf": "/static/media/inconsolata.821f8cdc.otf",
+    "static/media/linuxIcon.png": "/static/media/linuxIcon.e62104c6.png",
+    "static/media/postgresIcon.png": "/static/media/postgresIcon.2f6096df.png",
+    "static/media/pythonIcon.png": "/static/media/pythonIcon.76fc9aa2.png",
+    "static/media/raspberryPiIcon.png": "/static/media/raspberryPiIcon.453530cb.png",
+    "static/media/sequelizeIcon.png": "/static/media/sequelizeIcon.85056624.png",
+    "static/media/sqlAlchemyIcon.png": "/static/media/sqlAlchemyIcon.9721fedd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1e3404c8.js",
+    "static/js/2.3a58451b.chunk.js",
+    "static/css/main.68e5a794.chunk.css",
+    "static/js/main.0f3f2267.chunk.js"
+  ]
+}
