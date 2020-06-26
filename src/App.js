@@ -53,11 +53,11 @@ setActive = (id) =>{
 render = () =>{
     return (
       <div className="App">
-        <Sketch />
-
         <div className="navbar">
           <Header navLinks={this.state.navLinks} setActive={this.setActive}/>
         </div>
+
+        <Sketch />
         
         <div id="About" className="about section">
           <h1>About</h1>
