@@ -23,12 +23,12 @@ export class App extends React.Component {
             url: '#Skills',
             active: false
         },
-        {
-            id:3,
-            title: 'Showcase',
-            url: '#Showcase',
-            active: false
-        },
+        // {
+        //     id:3,
+        //     title: 'Showcase',
+        //     url: '#Showcase',
+        //     active: false
+        // },
         {
             id:4,
             title: 'Contact',
@@ -69,10 +69,10 @@ render = () =>{
           <Skill />
         </div>
 
-        <div id="Showcase" className="showcase section">
+        {/* <div id="Showcase" className="showcase section">
         <h1>Showcase</h1>
           <Showcase />
-        </div>
+        </div> */}
 
         <div id="Contact" className="contact section">
           <h1>Contact</h1>

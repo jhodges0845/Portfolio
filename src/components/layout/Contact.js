@@ -9,10 +9,10 @@ export class App extends React.Component {
 
                 <h3>Social Media</h3>
                 <div >
-                    <div style={{flex: 1}} className="flex-container">
+                    {/* <div style={{flex: 1}} className="flex-container">
                         <i style={{flex: 3}} class="fab fa-facebook-f fa-2x"></i>
                         <b style={{flex: 3}}>https://www.facebook.com/jason.m.hodges.1</b>
-                    </div>
+                    </div> */}
 
                     <div style={{flex: 1}} className="flex-container">
                         <i style={{flex: 3}} class="fab fa-linkedin-in fa-2x"></i>
@@ -29,10 +29,10 @@ export class App extends React.Component {
                         <b style={{flex: 3}}>jasonhodges0845@gmail.com</b>
                     </div>
 
-                    <div style={{flex: 1}} className="flex-container">
+                    {/* <div style={{flex: 1}} className="flex-container">
                         <i style={{flex: 3}} class="fas fa-phone fa-2x"></i>
                         <b style={{flex: 3}}>+1(662)417-9130</b>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         );

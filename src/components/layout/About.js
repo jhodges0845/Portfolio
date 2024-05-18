@@ -12,15 +12,17 @@ export class About extends React.Component{
                         <p>Generalist developer with industrial 
                             experience since 2017. I graduated with an
                             Assoicates of Science for Information Systems 
-                            Technology: Computer Programming which has recently been renamed Computer Engineering. 
+                            Technology: Computer Programming. 
                         </p>
-                        <p> My industrial experience is IT Administrator / Software Developer. I held the only 
-                            software developer postion at that paper mill, where my main focus was to create ways to 
-                            both keep network, devices, and process reliable and efficient.
+                        <p> My experience as a software developer has been in multiple industries including tech, manufactoring and banking. 
+                            While my core focus is .NET development I have experience in any languages and technologies. 
+                            I set my focus on efficiency of both development and deployment and try to find bottlenecks in processes to find opportunities for improvement.
+                            I do this without losing track of design or optimization based on customer needs.
                         </p>
                         <p> I excel at learning and implementing new technologies quickly 
-                            and efficiently. No matter if its IOT, full-stack web development, or some type 
-                            of API to other softwares, I strive to do the best job I can everytime.
+                            and efficiently. No matter if its IOT, full-stack web development, 
+                            or other types of communications and solutions; 
+                            I strive to do the best job I can everytime.
                         </p>
                     </div>
                 </div>
