@@ -9,7 +9,7 @@ export class About extends React.Component{
                         <img className="profile-pic" src={process.env.PUBLIC_URL + 'ProfileImage.JPG'} alt="" />
                     </div>
                     <div style={{flex: 2}}>
-                        <p>Generalist developer with industrial 
+                        <p>I'm a .NET developer with industrial 
                             experience since 2017. I graduated with an
                             Assoicates of Science for Information Systems 
                             Technology: Computer Programming. 
@@ -26,12 +26,12 @@ export class About extends React.Component{
                         </p>
                     </div>
                 </div>
-                <div>
+                {/* <div>
                     <h3>Check out my resume</h3>
                     <a href="https://www.dropbox.com/s/pkxiaxq68wzi7hn/JasonHodgesResume.pdf?dl=0">
                     <i class="fas fa-file-pdf fa-2x"></i>
                     </a>
-                </div>
+                </div> */}
             </div>);
     }
 
