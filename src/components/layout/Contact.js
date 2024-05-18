@@ -16,12 +16,12 @@ export class App extends React.Component {
 
                     <div style={{flex: 1}} className="flex-container">
                         <i style={{flex: 3}} class="fab fa-linkedin-in fa-2x"></i>
-                        <b style={{flex: 3}}>https://www.linkedin.com/in/jason-hodges-60b2a9130/</b>
+                        <a style={{flex: 3}} href="https://www.linkedin.com/in/jason-hodges-60b2a9130/">linkedIn</a>
                     </div>
                     
                     <div style={{flex: 1}} className="flex-container">
                         <i style={{flex: 3}} class="fab fa-github fa-2x"></i>
-                        <b style={{flex: 3}}>github.com/jhodges0845</b>
+                        <a style={{flex: 3}} href="http://github.com/jhodges0845">GitHub</a>
                     </div>
 
                     <div style={{flex: 1}} className="flex-container">
