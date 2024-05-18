@@ -4,7 +4,7 @@ import Sketch from "./components/sketches/Sketch";
 import Header from "./components/layout/Header";
 import About from "./components/layout/About";
 import Skill from "./components/layout/Skills";
-import Showcase from "./components/layout/Showcase";
+// import Showcase from "./components/layout/Showcase";
 import Contact from "./components/layout/Contact";
 
 export class App extends React.Component {
